@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -39,3 +40,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # Real-Estate
 a full stack nextjs app
 >>>>>>> f6f8dd3cdf1531bac5d79123343cae0473337ffa
+=======
+# Estate-Nextjs
+>>>>>>> bff0ba5e9b607f8d66bd45cfb8f0eb919993271d
