@@ -1,24 +1,24 @@
-// app/404/page.js
 'use client';
 
 import { useSearchParams } from 'next/navigation';
 import { Suspense } from 'react';
 
-export default function Custom404() {
+export default function NotFoundPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <Actual404 />
+      <PageContent />
     </Suspense>
   );
 }
 
-function Actual404() {
-  const searchParams = useSearchParams();
+function PageContent() {
+  const params = useSearchParams();
+  const errorMsg = params.get('error') || 'Page Not Found';
 
   return (
-    <div>
-      <h1>404 - Page Not Found</h1>
-      <p>Search params: {searchParams.get('someParam')}</p>
+    <div className="text-center mt-20">
+      <h1 className="text-4xl font-bold mb-4">404 - {errorMsg}</h1>
+      <p className="text-gray-600">Oops! This page doesn't exist.</p>
     </div>
   );
 }
